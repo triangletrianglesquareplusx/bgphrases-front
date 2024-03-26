@@ -4,9 +4,8 @@ export default function Navbar() {
   return (
     <nav>
       <h1 className={styles.textCenter}>
-        БГЖАРГОН<span>.com</span>
+        {siteConstants.siteTitle}<span>{siteConstants.siteTitleDomain}</span>
       </h1>
-      <h2>{siteConstants.siteTitle}</h2>
     </nav>
   );
 }

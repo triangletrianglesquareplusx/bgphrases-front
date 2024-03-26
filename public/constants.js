@@ -1,4 +1,5 @@
 export const siteConstants = {
-    siteTitle: "БГЖАРГОН"
+    siteTitle: "БГЖАРГОН",
+    siteTitleDomain: ".com"
 }
 

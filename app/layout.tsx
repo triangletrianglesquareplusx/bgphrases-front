@@ -1,5 +1,6 @@
 import React from "react";
-import './global.css';
+import "./global.css";
+import { merriweather } from "./fonts";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={merriweather.className}>
       <body>{children}</body>
     </html>
   );
