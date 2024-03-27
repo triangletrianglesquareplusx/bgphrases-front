@@ -1,0 +1,13 @@
+.sectionBody{
+  padding: 20px;
+  width: 25%;
+}
+
+.sectionHeader{
+  text-align: left;
+  text-decoration: underline;
+}
+
+.initialText{
+  text-align: left;
+}
