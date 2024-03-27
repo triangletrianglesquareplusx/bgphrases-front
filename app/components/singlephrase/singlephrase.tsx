@@ -17,7 +17,7 @@ export default function SinglePhrase({
     <section className={styles.sectionBody}>
       <h3 className={styles.sectionHeader}>{title}</h3>
       <p className={styles.initialText}>{explanation}</p>
-      <p className={styles.initialText}>{examplePhrase}</p>
+      <p className={styles.explanationText}>{examplePhrase}</p>
     </section>
   );
 }

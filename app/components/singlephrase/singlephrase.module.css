@@ -10,4 +10,9 @@
 
 .initialText{
   text-align: left;
+
+}
+.explanationText {
+  font-style: italic;
+  font-weight: 200;
 }
