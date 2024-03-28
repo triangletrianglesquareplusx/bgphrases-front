@@ -5,7 +5,8 @@
 
 .sectionHeader{
   text-align: left;
-  text-decoration: underline;
+  text-decoration-line:underline;
+  text-decoration-style:solid;
 }
 
 .initialText{
@@ -15,4 +16,13 @@
 .explanationText {
   font-style: italic;
   font-weight: 200;
+}
+
+.voteContainer {
+  display: flex;
+  gap: 2em;
+}
+
+.voteValue {
+  
 }

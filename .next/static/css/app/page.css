@@ -37,7 +37,10 @@
 
 .singlephrase_sectionHeader__Kmub3{
   text-align: left;
-  text-decoration: underline;
+  -webkit-text-decoration-line:underline;
+          text-decoration-line:underline;
+  -webkit-text-decoration-style:solid;
+          text-decoration-style:solid;
 }
 
 .singlephrase_initialText__Hu0tE{
@@ -47,6 +50,15 @@
 .singlephrase_explanationText___oex6 {
   font-style: italic;
   font-weight: 200;
+}
+
+.singlephrase_voteContainer__30RsA {
+  display: flex;
+  gap: 2em;
+}
+
+.singlephrase_voteValue__Zn5yJ {
+  
 }
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\

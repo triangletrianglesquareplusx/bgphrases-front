@@ -4,6 +4,8 @@ type singlePhrase = {
   word: string;
   definition: string;
   example_usage: string;
+  likes: number;
+  dislikes: number;
 };
 async function getPhrasesData() {
   const res = await fetch("https://bgphrases.onrender.com/phrases/all");
@@ -24,6 +26,8 @@ export default async function AllPhrases() {
           title={singlePhrase.word}
           explanation={singlePhrase.definition}
           examplePhrase={singlePhrase.example_usage}
+          likes={singlePhrase.likes}
+          dislikes={singlePhrase.dislikes}
         />
       ))}
     </>
