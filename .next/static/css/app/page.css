@@ -42,10 +42,12 @@
   -webkit-text-decoration-style:solid;
           text-decoration-style:solid;
 }
+.singlephrase_sectionHeader__Kmub3:hover{
+  color: yellow;
+}
 
 .singlephrase_initialText__Hu0tE{
   text-align: left;
-
 }
 .singlephrase_explanationText___oex6 {
   font-style: italic;
@@ -57,9 +59,6 @@
   gap: 2em;
 }
 
-.singlephrase_voteValue__Zn5yJ {
-  
-}
 
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/hero/hero.module.css ***!
