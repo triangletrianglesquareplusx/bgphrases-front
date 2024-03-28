@@ -1,8 +1,13 @@
+.navContainer {
+  display: flex;
+  justify-content: center;
+}
 .textCenter {
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   font-weight: bold;
   margin-top: 15px;
+  width: 40%;
 }
 
 @media (max-width: 767px) {
