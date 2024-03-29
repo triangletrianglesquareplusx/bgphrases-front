@@ -8,10 +8,12 @@
   text-decoration-line:underline;
   text-decoration-style:solid;
 }
+.sectionHeader:hover{
+  color: yellow;
+}
 
 .initialText{
   text-align: left;
-
 }
 .explanationText {
   font-style: italic;
@@ -23,6 +25,3 @@
   gap: 2em;
 }
 
-.voteValue {
-  
-}

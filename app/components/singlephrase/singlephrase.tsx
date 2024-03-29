@@ -1,5 +1,6 @@
 import styles from "./singlephrase.module.css";
 import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
+import Link from "next/link";
 
 type SinglePhrase = {
   key: number;
@@ -20,7 +21,7 @@ export default function SinglePhrase({
   return (
     //having headings with sections is default semantic behaviour
     <section className={styles.sectionBody}>
-      <h3 className={styles.sectionHeader}>{title}</h3>
+      <h3 className={styles.sectionHeader}><Link href={`/${title}`} style={{textDecoration: "none"}}>{title}</Link></h3>
       <p className={styles.initialText}>{explanation}</p>
       <p className={styles.explanationText}>{examplePhrase}</p>
       <div className={styles.voteContainer}>

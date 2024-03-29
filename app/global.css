@@ -5,3 +5,18 @@ body {
     background: linear-gradient(135deg, #687995 11%, #9979AD 33%, #C78BA2 66%, #E0C79D 100%) no-repeat fixed 0 0;
     color: #FFF;
 }
+
+h1 > a {
+    color: white;
+}
+h1 > a:hover {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
