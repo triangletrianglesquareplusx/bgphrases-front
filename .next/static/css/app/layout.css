@@ -8,6 +8,14 @@ body {
     background: linear-gradient(135deg, #687995 11%, #9979AD 33%, #C78BA2 66%, #E0C79D 100%) no-repeat fixed 0 0;
     color: #FFF;
 }
+
+h1 > a {
+    color: white;
+}
+h1 > a:hover {
+    color: white;
+}
+
 a {
     color: white;
 }
@@ -15,6 +23,35 @@ a {
 a:hover {
     color: yellow;
 }
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/navbar/navbar.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.navbar_navContainer__IeQba {
+  display: flex;
+  justify-content: center;
+}
+.navbar_textCenter__w3CaC {
+  text-align: left;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 15px;
+  width: 40%;
+}
+
+@media (max-width: 767px) {
+  .navbar_textCenter__w3CaC {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar_textCenter__w3CaC {
+    font-size: 28px;
+    margin-top: 5px;
+  }
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\fonts.ts","import":"Merriweather_Sans","arguments":[{"weight":["300","400","800"],"subsets":["latin","cyrillic-ext"],"display":"swap"}],"variableName":"merriweather"} ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/

@@ -1,6 +1,7 @@
 import React from "react";
 import "./global.css";
 import { merriweather } from "./fonts";
+import Navbar from "./components/navbar/navbar";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={merriweather.className}>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
