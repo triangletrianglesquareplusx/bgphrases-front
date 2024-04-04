@@ -1,12 +1,6 @@
 import SinglePhrase from "../singlephrase/singlephrase";
-type singlePhrase = {
-  id: number;
-  word: string;
-  definition: string;
-  example_usage: string;
-  likes: number;
-  dislikes: number;
-};
+import { singlePhrase } from "../../../public/shared_types";
+
 async function getPhrasesData() {
   const res = await fetch("https://bgphrases.onrender.com/phrases/all");
   if (!res.ok) {
@@ -23,6 +17,7 @@ export default async function AllPhrases() {
       {phrasesData.map((singlePhrase: singlePhrase) => (
         <SinglePhrase
           key={singlePhrase.id}
+          isExpanded={false}
           title={singlePhrase.word}
           explanation={singlePhrase.definition}
           examplePhrase={singlePhrase.example_usage}
