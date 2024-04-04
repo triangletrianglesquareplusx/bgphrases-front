@@ -3,13 +3,12 @@ import SinglePhrase from "../components/singlephrase/singlephrase";
 import { singlePhrase } from "../../public/shared_types";
 
 async function getExpandedPhraseData(title) {
-  console.log(`The id is ${title}`);
   const res = await fetch(
     `https://bgphrases.onrender.com/phrases/multiple/${title}`
   );
   if (!res.ok) {
     //implement error
-    console.log(res.body);
+    //console.log(res.body);
   }
   return res.json();
 }
@@ -20,7 +19,7 @@ export default async function Page({
   params: { phrase: string };
 }) {
   const expandedPhraseData = await getExpandedPhraseData(phrase);
-
+  console.log(expandedPhraseData)
   return (
     <>
       <Hero>
@@ -31,7 +30,9 @@ export default async function Page({
           examplePhrase={singleExpandedPhrase.example_usage}
           likes={singleExpandedPhrase.likes}
           dislikes={singleExpandedPhrase.dislikes}
-          author={singleExpandedPhrase.author}/>
+          authorId={singleExpandedPhrase.authorId}
+          date={singleExpandedPhrase.createdAt}
+          />
         ))}
       </Hero>
     </>

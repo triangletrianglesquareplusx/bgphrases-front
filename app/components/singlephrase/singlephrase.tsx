@@ -1,8 +1,9 @@
 import styles from "./singlephrase.module.css";
 import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
 import Link from "next/link";
+import AuthorInfoPane from "../authorInfo/authorInfopane";
 
-type SinglePhrase = {
+interface singlePhraseProps {
   key?: number;
   isExpanded: boolean;
   title: string;
@@ -10,8 +11,9 @@ type SinglePhrase = {
   examplePhrase: string;
   likes: number;
   dislikes: number;
-  author?: string;
-};
+  authorId?: number;
+  date?: string;
+}
 
 export default function SinglePhrase({
   isExpanded,
@@ -20,8 +22,9 @@ export default function SinglePhrase({
   examplePhrase,
   likes,
   dislikes,
-  author,
-}: SinglePhrase) {
+  authorId,
+  date
+}: singlePhraseProps) {
   return (
     //having headings with sections is default semantic behaviour
     <section className={styles.sectionBody}>
@@ -36,7 +39,15 @@ export default function SinglePhrase({
       </h3>
       <p className={styles.initialText}>{explanation}</p>
       <p className={styles.explanationText}>{examplePhrase}</p>
-      {isExpanded ? <p>{author}</p> : <></>}
+      {isExpanded ? (
+        <>
+          <AuthorInfoPane authorId={authorId} />
+          <p>{date}</p>
+        </>
+      ) : (
+        <></>
+      )}
+
       <div className={styles.voteContainer}>
         <div>
           <span style={{ padding: 7 }}>{likes}</span>

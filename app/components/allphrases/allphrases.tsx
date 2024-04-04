@@ -5,7 +5,7 @@ async function getPhrasesData() {
   const res = await fetch("https://bgphrases.onrender.com/phrases/all");
   if (!res.ok) {
     //implement error
-    console.log(res.body);
+    //console.log(res.body);
   }
   return res.json();
 }
