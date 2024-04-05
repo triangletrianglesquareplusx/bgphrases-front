@@ -60,6 +60,11 @@ export default function SinglePhrase({
           <FaThumbsDown className={styles.voteIcon} />
         </div>
       </div>
+      
+      {isExpanded ? <div>
+        <p>Tags: </p>
+      </div> : ''}
+      
     </section>
   );
 }

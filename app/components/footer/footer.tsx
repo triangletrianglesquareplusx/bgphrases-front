@@ -22,20 +22,14 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          {bgjargonUrls.map((pair, i) =>
-            i == bgjargonUrls.length - 1 ? (
+          {bgjargonUrls.map((pair, i) => (
+            <>
               <a key={pair[0]} href={pair[1]} className={styles.linkItem}>
                 {pair[0]}
               </a>
-            ) : (
-              <>
-                <a key={pair[0]} href={pair[1]} className={styles.linkItem}>
-                  {pair[0]}
-                </a>{" "}
-                |
-              </>
-            )
-          )}
+              {i == bgjargonUrls.length - 1 ?'': <span>|</span>}
+            </>
+          ))}
         </div>
       </div>
       <p className={styles.warning}>
