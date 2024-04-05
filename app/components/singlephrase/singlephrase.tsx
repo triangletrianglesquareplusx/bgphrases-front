@@ -44,7 +44,7 @@ export default function SinglePhrase({
       {isExpanded ? (
         <>
           <AuthorInfoPane authorId={authorId} />
-          <p>{resultDate} at {resultTime}</p>
+          <p className={styles.date}>{resultDate} at {resultTime}</p>
         </>
       ) : (
         <></>
@@ -60,6 +60,11 @@ export default function SinglePhrase({
           <FaThumbsDown className={styles.voteIcon} />
         </div>
       </div>
+      
+      {isExpanded ? <div>
+        <p>Tags: </p>
+      </div> : ''}
+      
     </section>
   );
 }

@@ -16,22 +16,18 @@
 }
 
 .singlephrase_sectionHeader__Kmub3{
-  text-align: left;
   -webkit-text-decoration-line:underline;
           text-decoration-line:underline;
   -webkit-text-decoration-style:solid;
           text-decoration-style:solid;
 }
-.singlephrase_sectionHeader__Kmub3:hover{
-  color: yellow;
-}
 
-.singlephrase_initialText__Hu0tE{
-  text-align: left;
+.singlephrase_definitionText__GjjhG{
+  font-weight: 300;
 }
 .singlephrase_explanationText___oex6 {
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .singlephrase_voteContainer__30RsA {
@@ -49,13 +45,9 @@
   color: yellow;
 }
 
-
-
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/authorInfo/authorinfopane.module.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************/
-.authorinfopane_authorInfoContainer__drUhb {
-    display: flex;
-    align-items: center;
-    gap: .2rem;
+.singlephrase_date__p9N4f{
+  font-size: x-small;
 }
+
+
+

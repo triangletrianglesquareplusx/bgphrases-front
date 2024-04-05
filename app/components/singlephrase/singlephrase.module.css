@@ -4,20 +4,16 @@
 }
 
 .sectionHeader{
-  text-align: left;
   text-decoration-line:underline;
   text-decoration-style:solid;
 }
-.sectionHeader:hover{
-  color: yellow;
-}
 
-.initialText{
-  text-align: left;
+.definitionText{
+  font-weight: 300;
 }
 .explanationText {
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .voteContainer {
@@ -33,6 +29,10 @@
 
 .voteIcon{
   color: yellow;
+}
+
+.date{
+  font-size: x-small;
 }
 
 
