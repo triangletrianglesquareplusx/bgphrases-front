@@ -1,6 +1,5 @@
 import { authorInfo } from "../../../public/shared_types";
-import styles from './authorinfopane.module.css';
-
+import styles from "./authorinfopane.module.css";
 
 async function getAuthorData(id) {
   const res = await fetch(`https://bgphrases.onrender.com/authors/${id}`);
@@ -19,10 +18,9 @@ export default async function AuthorInfoPane({ authorId }: authorInfoProps) {
   const authorData: authorInfo = await getAuthorData(authorId);
   return (
     <div>
-      <div className={styles.authorInfoContainer}>
-        <p>{authorData.displayName}</p>
-        <span>from {authorData.location}</span>
-      </div>
+      <p>
+        {authorData.displayName} from {authorData.location}
+      </p>
     </div>
   );
 }

@@ -4,16 +4,12 @@
 }
 
 .sectionHeader{
-  text-align: left;
   text-decoration-line:underline;
   text-decoration-style:solid;
 }
-.sectionHeader:hover{
-  color: yellow;
-}
 
-.initialText{
-  text-align: left;
+.definitionText{
+  margin: 0;
 }
 .explanationText {
   font-style: italic;
