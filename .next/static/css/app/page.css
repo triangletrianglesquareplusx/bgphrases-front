@@ -14,11 +14,11 @@
 }
 
 .singlephrase_definitionText__GjjhG{
-  margin: 0;
+  font-weight: 300;
 }
 .singlephrase_explanationText___oex6 {
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .singlephrase_voteContainer__30RsA {
@@ -34,6 +34,10 @@
 
 .singlephrase_voteIcon__oEXXY{
   color: yellow;
+}
+
+.singlephrase_date__p9N4f{
+  font-size: x-small;
 }
 
 

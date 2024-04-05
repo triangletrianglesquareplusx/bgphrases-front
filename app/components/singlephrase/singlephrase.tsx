@@ -44,7 +44,7 @@ export default function SinglePhrase({
       {isExpanded ? (
         <>
           <AuthorInfoPane authorId={authorId} />
-          <p>{resultDate} at {resultTime}</p>
+          <p className={styles.date}>{resultDate} at {resultTime}</p>
         </>
       ) : (
         <></>

@@ -9,11 +9,11 @@
 }
 
 .definitionText{
-  margin: 0;
+  font-weight: 300;
 }
 .explanationText {
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .voteContainer {
@@ -29,6 +29,10 @@
 
 .voteIcon{
   color: yellow;
+}
+
+.date{
+  font-size: x-small;
 }
 
 
