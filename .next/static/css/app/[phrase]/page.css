@@ -39,6 +39,17 @@
   gap: 2em;
 }
 
+.singlephrase_singleVoteContainer__E2amW {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singlephrase_voteIcon__oEXXY{
+  color: yellow;
+}
+
+
 
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/authorInfo/authorinfopane.module.css ***!
