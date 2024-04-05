@@ -2,6 +2,7 @@ import React from "react";
 import "./global.css";
 import { merriweather } from "./fonts";
 import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 
 export default function RootLayout({
   children,
@@ -14,6 +15,7 @@ export default function RootLayout({
         <div className="main-container">
           <Navbar />
           {children}
+          <Footer/>
         </div>
       </body>
     </html>
