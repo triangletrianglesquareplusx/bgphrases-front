@@ -1,0 +1,25 @@
+.footerContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .linkContainer {
+    flex-direction: column;
+  }
+}
+
+.linkItem {
+  padding: 0 0.5rem;
+}
+
+.warning {
+  text-align: center;
+}
