@@ -11,8 +11,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={merriweather.className}>
       <body>
-        <Navbar />
-        {children}
+        <div className="main-container">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );

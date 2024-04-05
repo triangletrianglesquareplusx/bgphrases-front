@@ -1,6 +1,7 @@
 import { authorInfo } from "../../../public/shared_types";
 import styles from './authorinfopane.module.css';
 
+
 async function getAuthorData(id) {
   const res = await fetch(`https://bgphrases.onrender.com/authors/${id}`);
   if (!res.ok) {

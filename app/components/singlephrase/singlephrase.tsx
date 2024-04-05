@@ -1,7 +1,8 @@
 import styles from "./singlephrase.module.css";
-import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
+import { FaThumbsDown, FaThumbsUp } from "react-icons/fa";
 import Link from "next/link";
 import AuthorInfoPane from "../authorInfo/authorInfopane";
+import {convertRawDateStringIntoHumanReadableDate} from '../../../public/helpers';
 
 interface singlePhraseProps {
   key?: number;
@@ -23,14 +24,15 @@ export default function SinglePhrase({
   likes,
   dislikes,
   authorId,
-  date
+  date,
 }: singlePhraseProps) {
+  const [resultDate, resultTime] = convertRawDateStringIntoHumanReadableDate(date);
   return (
     //having headings with sections is default semantic behaviour
     <section className={styles.sectionBody}>
       <h3 className={styles.sectionHeader}>
         {isExpanded ? (
-          title
+          <p>{title}</p>
         ) : (
           <Link href={`/${title}`} style={{ textDecoration: "none" }}>
             {title}
@@ -42,20 +44,20 @@ export default function SinglePhrase({
       {isExpanded ? (
         <>
           <AuthorInfoPane authorId={authorId} />
-          <p>{date}</p>
+          <p>{resultDate} at {resultTime}</p>
         </>
       ) : (
         <></>
       )}
 
       <div className={styles.voteContainer}>
-        <div>
+        <div className={styles.singleVoteContainer}>
           <span style={{ padding: 7 }}>{likes}</span>
-          <FaRegThumbsUp />
+          <FaThumbsUp className={styles.voteIcon} />
         </div>
-        <div>
+        <div className={styles.singleVoteContainer}>
           <span style={{ padding: 7 }}>{dislikes}</span>
-          <FaRegThumbsDown />
+          <FaThumbsDown className={styles.voteIcon} />
         </div>
       </div>
     </section>
