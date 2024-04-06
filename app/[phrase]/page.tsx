@@ -23,7 +23,7 @@ export default async function Page({
   return (
     <>
       <Hero isExpandedView={true}>
-        {expandedPhraseData.map((singleExpandedPhrase: singlePhrase) => (
+        <div>{expandedPhraseData.map((singleExpandedPhrase: singlePhrase) => (
           <SinglePhrase key={singleExpandedPhrase.id} isExpanded={true} 
           title={singleExpandedPhrase.word}
           explanation={singleExpandedPhrase.definition}
@@ -33,7 +33,9 @@ export default async function Page({
           authorId={singleExpandedPhrase.authorId}
           date={singleExpandedPhrase.createdAt}
           />
-        ))}
+        ))}</div>
+        <p>Test</p>
+        
       </Hero>
     </>
   );
