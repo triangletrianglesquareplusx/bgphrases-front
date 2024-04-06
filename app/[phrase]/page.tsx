@@ -22,7 +22,7 @@ export default async function Page({
   console.log(expandedPhraseData)
   return (
     <>
-      <Hero>
+      <Hero isExpandedView={true}>
         {expandedPhraseData.map((singleExpandedPhrase: singlePhrase) => (
           <SinglePhrase key={singleExpandedPhrase.id} isExpanded={true} 
           title={singleExpandedPhrase.word}
