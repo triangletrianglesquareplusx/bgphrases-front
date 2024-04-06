@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Hero>
+      <Hero isExpandedView={false}>
         <AllPhrases/>
       </Hero>
     </>
