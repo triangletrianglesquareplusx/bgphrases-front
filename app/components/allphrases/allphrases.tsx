@@ -2,7 +2,7 @@ import SinglePhrase from "../singlephrase/singlephrase";
 import { singlePhrase } from "../../../public/shared_types";
 
 async function getPhrasesData() {
-  const res = await fetch("https://bgphrases.onrender.com/phrases/all");
+  const res = await fetch("https://bgphrases.onrender.com/phrases/all", { cache: 'no-store' });
   if (!res.ok) {
     //implement error
     //console.log(res.body);

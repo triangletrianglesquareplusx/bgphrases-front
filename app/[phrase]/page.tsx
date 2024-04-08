@@ -19,7 +19,6 @@ export default async function Page({
   params: { phrase: string };
 }) {
   const expandedPhraseData = await getExpandedPhraseData(phrase);
-  console.log(expandedPhraseData)
   return (
     <>
       <Hero isExpandedView={true}>

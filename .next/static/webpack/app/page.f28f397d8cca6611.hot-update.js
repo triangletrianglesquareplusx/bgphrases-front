@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-self["webpackHotUpdate_N_E"]("app/[phrase]/page",{
+self["webpackHotUpdate_N_E"]("app/page",{
 
 /***/ "(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CPreslav%5CDownloads%5CThe%20Journey%5Cbgphrases-front%5Capp%5Ccomponents%5Csinglephrase%5Csinglephrase.module.css&modules=C%3A%5CUsers%5CPreslav%5CDownloads%5CThe%20Journey%5Cbgphrases-front%5Capp%5Ccomponents%5Chero%5Chero.module.css&modules=C%3A%5CUsers%5CPreslav%5CDownloads%5CThe%20Journey%5Cbgphrases-front%5Cnode_modules%5Cnext%5Cdist%5Cclient%5Clink.js&server=false!":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
