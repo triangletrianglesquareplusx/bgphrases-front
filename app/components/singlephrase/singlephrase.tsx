@@ -29,6 +29,7 @@ export default function SinglePhrase({
   const [resultDate, resultTime] = convertRawDateStringIntoHumanReadableDate(date);
   return (
     //having headings with sections is default semantic behaviour
+    
     <section className={styles.sectionBody}>
       <h3 className={styles.sectionHeader}>
         {isExpanded ? (
@@ -49,7 +50,7 @@ export default function SinglePhrase({
       ) : (
         <></>
       )}
-
+      
       <div className={styles.voteContainer}>
         <div className={styles.singleVoteContainer}>
           <span style={{ padding: 7 }}>{likes}</span>
